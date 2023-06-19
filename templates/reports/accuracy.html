@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600&display=swap');
+    table {
+      border-collapse: collapse;
+      border: solid #e5e7eb 1px;
+      border-radius: 6px;
+      width: 100%;
+      height: auto;
+    }
+
+    td,
+    th {
+      border-left: solid #e5e7eb 1px;
+      border-top: solid #e5e7eb 1px;
+      padding-left: 5px;
+      height: auto;
+    }
+
+    th {
+      background-color: #0284c7;
+      border-top: none;
+      color: #f2f2f2;
+    }
+
+    td:first-child,
+    th:first-child {
+      border-left: none;
+    }
+    .linearity {
+      padding-top: 4px;
+      padding-bottom: 4px;
+    }
+    .accuracy {
+      padding-top: 1px;
+      padding-bottom: 1px;
+      text-align: center;
+      font-size: small;
+    }
+    .vertical-table {
+      display: grid;
+      grid-template-areas: 'head body';
+      height: 100%;
+    }
+    .vertical-table thead {
+      display: flex;
+      flex-direction: column;
+    }
+    .vertical-table tbody {
+      display: flex;
+    }
+    .vertical-table tr {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+    }
+    .vertical-table th {
+      background-color: white;
+      border-top: none;
+      color: #212529;
+      border-left: solid #e5e7eb 1px;
+      border-top: solid #e5e7eb 1px;
+    }
+    .vertical-table td,
+    th {
+      border-left: solid #e5e7eb 1px;
+      border-top: solid #e5e7eb 1px;
+      font-size: small;
+      height: auto;
+    }
+
+    /* @media print {
+      html,
+      body {
+        display: inline-block;
+      }
+    } */
+  </style>
+  <body
+    style="
+      padding: 0;
+      font-family: 'Noto Sans';
+      font-style: normal;
+      background-color: white;
+    "
+  >
+    <page
+      style="
+        background: white;
+        display: block;
+        margin: 0 auto;
+
+        /* box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5); */
+        width: 21cm;
+        min-height: 29.7cm;
+        background-color: white;
+        position: relative;
+        page-break-after: always;
+      "
+      size="A4"
+    >
+      <!-- <div
+  style="
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+  "
+> -->
+      <div
+        style="
+          display: flex;
+          flex-direction: row;
+          padding-left: 32px;
+          padding-right: 32px;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          align-items: center;
+          text-align: center;
+          justify-content: space-between;
+        "
+      >
+        <div>
+          <p style="font-weight: 600; font-size: 16px">ISE(Na)</p>
+          <!-- <p>Unit</p> -->
+        </div>
+        <div
+          style="
+            /* display: flex; */
+            /* flex-direction: row;
+justify-content: end; */
+            text-decoration: underline;
+            font-weight: 600;
+            font-size: 16px;
+            /* margin-left: 315px; */
+          "
+        >
+          <p>Accuracy</p>
+        </div>
+        <div style="margin-left: 50px">
+          <img
+            src="https://development.d2hf9dwemxaduy.amplifyapp.com/images/roche-logo.svg"
+            alt="img"
+            style="width: 92.4px; height: 48px"
+          />
+        </div>
+      </div>
+      <div style="padding-left: 32px; padding-right: 32px; height: auto">
+        <p style="margin-bottom: 0px">Calibration result</p>
+
+        <table>
+          <tr>
+            <td class="accuracy" style="text-align: left">Reagent</td>
+            <td class="accuracy">Internal Standard solution B</td>
+            <td class="accuracy">Diluent B</td>
+            <td class="accuracy">Reference electrode solution</td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">ReagentLot</td>
+            <td class="accuracy">For Hitachi ISE Standard solution L</td>
+            <td class="accuracy">For Hitachi ISE Standard solution H</td>
+            <td class="accuracy">Hitachi ISE Standard calibrator</td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">Standard</td>
+            <td class="accuracy"></td>
+            <td class="accuracy"></td>
+            <td class="accuracy"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">StandardLot</td>
+            <td class="accuracy"></td>
+            <td class="accuracy"></td>
+            <td class="accuracy"></td>
+          </tr>
+          <tr>
+            <td class="accuracy"></td>
+            <td class="accuracy" colspan="3">Na</td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">
+              Internal Standard liquid electromotive force
+            </td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">
+              Low liquid electromotive force
+            </td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">
+              High liquid electromotive force
+            </td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">
+              Calibrator liquid electromotive force
+            </td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">Slope Value</td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">IS concentration</td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">
+              Calibrator measurment concentration
+            </td>
+            <td class="accuracy" colspan="3"></td>
+          </tr>
+          <tr>
+            <td class="accuracy" style="text-align: left">Comparison value</td>
+            <td class="accuracy" colspan="3">asdfg</td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="padding: 32px; height: auto">
+        <table class="vertical-table" style="margin-top: auto">
+          <thead>
+            <th style="background-color: #0284c7; color: white">Sample</th>
+            <th>SampleLot</th>
+            <th>Target</th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+            <th>6</th>
+            <th>7</th>
+            <th>8</th>
+            <th>9</th>
+            <th>10</th>
+            <th>N</th>
+            <th>Mean</th>
+            <th>SD</th>
+            <th>CV(%)</th>
+            <th>Min</th>
+            <th>Max</th>
+            <th>Range</th>
+            <th>unit</th>
+          </thead>
+          <tbody>
+            <tr>
+              <td style="background-color: #0284c7; color: white">PCCC1</td>
+              <td>0.24</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.24</td>
+              <td>0.25</td>
+              <td>0.26</td>
+              <td>0.27</td>
+              <td>0.28</td>
+            </tr>
+            <tr>
+              <td style="background-color: #0284c7; color: white">PCCC2</td>
+              <td>0.24</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.24</td>
+              <td>0.25</td>
+              <td>0.26</td>
+              <td>0.27</td>
+              <td>0.28</td>
+            </tr>
+            <tr>
+              <td style="background-color: #0284c7; color: white">PCCC3</td>
+              <td>0.24</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.24</td>
+              <td>0.25</td>
+              <td>0.26</td>
+              <td>0.27</td>
+              <td>0.28</td>
+            </tr>
+            <tr>
+              <td style="background-color: #0284c7; color: white">PCCC4</td>
+              <td>0.24</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.24</td>
+              <td>0.25</td>
+              <td>0.26</td>
+              <td>0.27</td>
+              <td>0.28</td>
+            </tr>
+            <tr>
+              <td style="background-color: #0284c7; color: white">PCCC5</td>
+              <td>0.24</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.24</td>
+              <td>0.25</td>
+              <td>0.26</td>
+              <td>0.27</td>
+              <td>0.28</td>
+            </tr>
+            <tr>
+              <td style="background-color: #0284c7; color: white">PCCC6</td>
+              <td>0.24</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.23</td>
+              <td>0.24</td>
+              <td>0.25</td>
+              <td>0.26</td>
+              <td>0.27</td>
+              <td>0.28</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <!-- </div> -->
+    </page>
+  </body>
+</html>
