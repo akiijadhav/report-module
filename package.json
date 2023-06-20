@@ -1,8 +1,15 @@
 {
-  "name": "reports-module",
+  "name": "@akiijadhav/reports-module",
   "version": "1.0.0",
   "description": "A next.js web application of RDKK EP Evaluator",
   "main": "index.ts",
+  "keywords": [
+    "module",
+    "nextjs",
+    "react",
+    "typescript",
+    "package"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -51,5 +58,8 @@
     "components/",
     "public/",
     "styles/"
-  ]
+  ],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  }
 }
