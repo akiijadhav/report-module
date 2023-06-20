@@ -49,6 +49,7 @@
   "files": [
     "pages/",
     "components/",
+    "public/",
     "styles/"
   ]
 }
