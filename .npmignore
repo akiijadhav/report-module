@@ -1,0 +1,7 @@
+# .npmignore
+/node_modules
+/.next
+/.git
+/.vscode
+/dist
+/.eslint*

@@ -1,8 +1,8 @@
 {
-  "name": "rdkk-ep-evaluator-web",
+  "name": "reports-module",
   "version": "1.0.0",
   "description": "A next.js web application of RDKK EP Evaluator",
-  "main": ".eslintrc.js",
+  "main": "index.ts",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -44,6 +44,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/solutelabs/rdkk-ep-evaluator-web.git"
-  }
+    "url": "git+https://github.com/akiijadhav/report-module.git"
+  },
+  "files": [
+    "pages/",
+    "components/",
+    "styles/"
+  ]
 }
