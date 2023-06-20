@@ -3,5 +3,4 @@
 /.next
 /.git
 /.vscode
-/dist
 /.eslint*
