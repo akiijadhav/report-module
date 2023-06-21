@@ -24,7 +24,8 @@ export default {
     babel({
       babelHelpers: 'bundled', 
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      include: ['src/**/*', 'components/**/*', 'pages/**/*', 'public/**/*']
+      include: ['src/**/*', 'components/**/*', 'pages/**/*', 'public/**/*'],
+      exclude: 'node_modules/**'
     }),
     image(),
     postcss({
