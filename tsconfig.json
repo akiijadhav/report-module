@@ -16,12 +16,9 @@
     "incremental": true
   },
   "include": [
+    "src/**/*.tsx",
     "next-env.d.ts",
-    "i18n.js",
-    "**/*.ts",
-    "**/*.jsx",
-    "**/*.js",
-    "**/*.tsx"
-, "rollup.config.mjs"  ],
+    "i18n.js"
+  ],
   "exclude": ["node_modules"]
 }

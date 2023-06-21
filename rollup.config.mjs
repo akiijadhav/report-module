@@ -2,9 +2,9 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import typescript from 'rollup-plugin-typescript2';
 import babel from '@rollup/plugin-babel';
-import image from '@rollup/plugin-image';
-import copy from 'rollup-plugin-copy';
 import postcss from 'rollup-plugin-postcss';
+import { terser } from 'rollup-plugin-terser';
+import dts from 'rollup-plugin-dts';
 
 export default {
   input: 'src/index.ts',
@@ -13,6 +13,12 @@ export default {
       file: 'dist/index.js',
       format: 'cjs',
       exports: 'named',
+      sourcemap: true,
+    },
+    {
+      file: 'dist/index.esm.js',
+      format: 'esm',
+      sourcemap: true,
     },
   ],
   plugins: [
@@ -22,21 +28,22 @@ export default {
       tsconfig: 'tsconfig.json',
     }),
     babel({
-      babelHelpers: 'bundled', 
+      babelHelpers: 'bundled',
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      include: ['src/**/*', 'components/**/*', 'pages/**/*', 'public/**/*'],
-      exclude: 'node_modules/**'
+      include: ['src/**/*', 'public/**/*'],
+      exclude: 'node_modules/**',
     }),
-    image(),
-    postcss({
-      extract: true,
-    }),
-    copy({
-      targets: [
-        { src: 'public/*', dest: 'dist' },
-        { src: 'styles/globals.css', dest: 'dist/styles' },
-      ]
-    })
+    postcss({ extract: 'styles.min.css', minimize: true }),
+    terser(),
+    // TypeScript declaration file (.d.ts) configuration
+    {
+      input: 'src/index.ts',
+      output: {
+        file: 'dist/index.d.ts',
+        format: 'es',
+      },
+      plugins: [dts()],
+    },
   ],
   external: ['react', 'react-dom'],
 };

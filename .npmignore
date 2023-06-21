@@ -4,3 +4,4 @@
 /.git
 /.vscode
 /.eslint*
+/.package.lock.json

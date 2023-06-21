@@ -11,14 +11,12 @@
     "package"
   ],
   "scripts": {
-    "prepublish": "npm run build",
     "dev": "next dev",
     "build": "rollup -c",
     "start": "next start",
     "lint": "next lint"
   },
   "dependencies": {
-    "@akiijadhav/reports-module": "^1.0.6",
     "@headlessui/react": "^1.7.4",
     "@tanstack/react-table": "^8.7.6",
     "axios": "^1.2.0",
@@ -58,9 +56,11 @@
     "eslint-plugin-prettier": "^4.0.0",
     "postcss": "^8.4.18",
     "prettier": "^2.3.2",
-    "rollup": "^3.25.1",
+    "rollup": "^2.0.0",
     "rollup-plugin-copy": "^3.4.0",
+    "rollup-plugin-dts": "^3.0.0",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^6.1.0",
     "rollup-plugin-typescript2": "^0.34.1",
     "tailwindcss": "^3.2.3",
     "typescript": "^4.7.4"
