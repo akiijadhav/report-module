@@ -5,6 +5,7 @@ import babel from '@rollup/plugin-babel';
 import image from '@rollup/plugin-image';
 import copy from 'rollup-plugin-copy';
 import postcss from 'rollup-plugin-postcss';
+import json from '@rollup/plugin-json';
 
 export default {
   input: 'src/index.ts',
