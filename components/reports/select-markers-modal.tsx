@@ -1,5 +1,5 @@
 import { Dialog, Listbox } from '@headlessui/react';
-import { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import Image from 'next/image';
 import crossIcon from '../../public/icons/cross-icon.svg';
 import { TFunction } from 'i18next';

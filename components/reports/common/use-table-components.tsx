@@ -1,6 +1,6 @@
 import { HeaderContext, CellContext, Cell } from '@tanstack/react-table';
 import Image from 'next/image';
-import {
+import React, {
   Dispatch,
   KeyboardEvent,
   SetStateAction,

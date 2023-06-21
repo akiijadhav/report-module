@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 import ConfirmationModal from './confirmation-modal';
 import { ReportWorkflowStep } from './models/report-workflow-step';
 import { useTranslation } from 'react-i18next';

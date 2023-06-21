@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react';
+import React, { useCallback, useState } from 'react';
 import { NewReportDetail } from './models/new-report-detail';
 import {
   ColumnDef,

@@ -1,5 +1,5 @@
 import { Dialog } from '@headlessui/react';
-import { Dispatch, SetStateAction, useState, Fragment } from 'react';
+import React, { Dispatch, SetStateAction, useState, Fragment } from 'react';
 import { ReportType } from './table/types';
 import crossIcon from '../../public/icons/cross-icon.svg';
 import Image from 'next/image';

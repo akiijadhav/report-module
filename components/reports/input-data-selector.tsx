@@ -1,6 +1,6 @@
 import { useFormik } from 'formik';
 import Image from 'next/image';
-import { Dispatch, SetStateAction, useState } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import uploadFileIcon from '../../public/icons/upload-file.svg';
 import useRequestUtilities from '../hooks/use-request-utilities';
 import { ReportDetail } from './models/report-detail';

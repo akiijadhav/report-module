@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { ReportWorkflowStep } from './models/new-report-workflow-step';
 
 export default function ReportContainer({

@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import tableSelectorIcon from '../../../public/icons/table-selector-icon.svg';
 import leftArrow from '../../../public/icons/left-arrow.svg';
-import { Dispatch, SetStateAction, useState } from 'react';
+import React, { Dispatch, SetStateAction, useState } from 'react';
 import { Dataset } from '../models/dataset';
 
 export default function ValidationTestSelector(props: {

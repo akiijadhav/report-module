@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from 'react';
+import React, { ReactElement, useEffect, useState } from 'react';
 import Image from 'next/image';
 import { useFormik } from 'formik';
 import untouchedDot from '../../public/icons/bullet.svg';

@@ -1,7 +1,7 @@
 import RocSelectInput from '../forms/select-input';
 import { useFormik } from 'formik';
 import { ReportWorkflowStep } from './models/report-workflow-step';
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import ReportFooter from './report-footer';
 import useRequestUtilities from '../hooks/use-request-utilities';
 import { ReportDetail } from '../reports/models/report-detail';

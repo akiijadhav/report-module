@@ -4,7 +4,7 @@ import { useRouter } from 'next/router';
 import Image from 'next/image';
 import pdfDownload from '../../public/icons/pdfDownload.svg';
 import { ReportDetail } from './models/report-details';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import NewDeleteReportModal from './new-delete-report-modal';
 
 export default function ReportFooter({

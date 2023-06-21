@@ -1,7 +1,7 @@
 import { Dialog } from '@headlessui/react';
 import crossIcon from '../../public/icons/cross-icon.svg';
 import Image from 'next/image';
-import { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import { useRouter } from 'next/router';
 const notoSansFont = 'noto-sans';
 
