@@ -177,6 +177,8 @@ const Accordion = ({
         {title}
         <span className="flex justify-center items-center rounded w-10 h-10">
           <Image
+            width={14}
+            height={8}
             src={downArrow}
             alt="Toggle accordion icon"
             className={`${
