@@ -5,7 +5,6 @@ import babel from '@rollup/plugin-babel';
 import image from '@rollup/plugin-image';
 import copy from 'rollup-plugin-copy';
 import postcss from 'rollup-plugin-postcss';
-import json from '@rollup/plugin-json';
 
 export default {
   input: 'src/index.ts',
@@ -19,14 +18,13 @@ export default {
   plugins: [
     resolve(),
     commonjs(),
-    json(),
     typescript({
       tsconfig: 'tsconfig.json',
     }),
     babel({
       babelHelpers: 'bundled', 
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      include: ['src/**/*', 'components/**/*', 'pages/**/*']
+      include: ['src/**/*', 'components/**/*', 'pages/**/*', 'public/**/*']
     }),
     image(),
     postcss({
