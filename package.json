@@ -13,7 +13,7 @@
   "scripts": {
     "prepublish": "npm run build",
     "dev": "next dev",
-    "build": "babel components pages --out-dir dist --extensions '.ts,.tsx' --copy-files",
+    "build": "rollup -c",
     "start": "next start",
     "lint": "next lint"
   },
@@ -38,6 +38,10 @@
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
+    "@rollup/plugin-babel": "^6.0.3",
+    "@rollup/plugin-commonjs": "^25.0.2",
+    "@rollup/plugin-image": "^3.0.2",
+    "@rollup/plugin-node-resolve": "^15.1.0",
     "@types/node": "18.11.9",
     "@types/react": "^18.0.25",
     "@types/react-dom": "^18.0.8",
@@ -51,6 +55,8 @@
     "eslint-plugin-prettier": "^4.0.0",
     "postcss": "^8.4.18",
     "prettier": "^2.3.2",
+    "rollup": "^3.25.1",
+    "rollup-plugin-typescript2": "^0.34.1",
     "tailwindcss": "^3.2.3",
     "typescript": "^4.7.4"
   },
@@ -59,13 +65,10 @@
     "url": "git+https://github.com/akiijadhav/report-module.git"
   },
   "files": [
-    "dist/",
-    "pages/",
-    "components/",
-    "public/",
-    "styles/"
+    "dist/"
   ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
-  }
+  },
+  "type": "commonjs"
 }

@@ -22,6 +22,6 @@
     "**/*.jsx",
     "**/*.js",
     "**/*.tsx"
-  ],
+, "rollup.config.mjs"  ],
   "exclude": ["node_modules"]
 }
