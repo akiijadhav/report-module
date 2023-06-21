@@ -1,4 +1,4 @@
-import { ReactElement, useState } from 'react';
+import React, { ReactElement, useState } from 'react';
 import Image from 'next/image';
 import UserLayout from '../../components/layouts/user-layout';
 import { NextPageWithLayout } from '../_app';

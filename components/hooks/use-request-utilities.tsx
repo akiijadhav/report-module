@@ -1,5 +1,5 @@
 import { useRouter } from 'next/router';
-import { useCallback } from 'react';
+import React, { useCallback } from 'react';
 
 function useRequestUtilities() {
   const router = useRouter();

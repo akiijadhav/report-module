@@ -1,5 +1,5 @@
 import { Dialog } from '@headlessui/react';
-import { Dispatch, SetStateAction, useCallback, useState } from 'react';
+import React, { Dispatch, SetStateAction, useCallback, useState } from 'react';
 import Image from 'next/image';
 import crossIcon from '../../public/icons/cross-icon.svg';
 import { DataSourceModel } from './models/data-source';

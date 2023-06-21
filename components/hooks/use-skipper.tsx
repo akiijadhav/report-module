@@ -1,4 +1,4 @@
-import { useRef, useCallback, useEffect } from 'react';
+import React, { useRef, useCallback, useEffect } from 'react';
 
 function useSkipper() {
   const shouldSkipRef = useRef(true);

@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function BubbleLoader() {
   return (
     <div className="flex justify-center items-center h-full">

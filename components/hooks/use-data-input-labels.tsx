@@ -1,4 +1,4 @@
-import { useCallback, useMemo } from 'react';
+import React, { useCallback, useMemo } from 'react';
 import { DataSetNames } from '../data-sources/enums/dataset-names';
 
 function useDataInputLabels() {

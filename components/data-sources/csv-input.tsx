@@ -1,6 +1,6 @@
 import { Listbox } from '@headlessui/react';
 import Image from 'next/image';
-import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
 import computerIcon from '../../public/icons/computer-line.svg';
 import warningIcon from '../../public/icons/warning-icon.svg';
 import displayFileIcon from '../../public/icons/selected-file-icon.svg';

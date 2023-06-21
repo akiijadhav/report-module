@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useState, useMemo, Dispatch, SetStateAction, useEffect } from 'react';
+import React, { useState, useMemo, Dispatch, SetStateAction, useEffect } from 'react';
 import downArrow from '../../public/icons/accordian-down-arrow.svg';
 import ModuleGroup from './module-group';
 import ManualInput from './manual-input';

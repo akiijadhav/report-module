@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import PageContent from './page-content';
 
 export default function PageContainer({

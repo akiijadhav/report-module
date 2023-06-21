@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction, useEffect, useState } from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useState } from 'react';
 import { rowInterface } from './table/types';
 import Image from 'next/image';
 import crossIcon from '../../public/icons/cross-icon.svg';

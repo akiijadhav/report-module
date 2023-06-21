@@ -1,5 +1,5 @@
 import { Dialog } from '@headlessui/react';
-import { Dispatch, SetStateAction, useMemo } from 'react';
+import React, { Dispatch, SetStateAction, useMemo } from 'react';
 import Image from 'next/image';
 import crossIcon from '../../public/icons/cross-icon.svg';
 import { LocalFileDetail } from './models/local-file-detail';

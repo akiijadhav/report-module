@@ -1,6 +1,6 @@
 import { Listbox } from '@headlessui/react';
 import Image from 'next/image';
-import { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
+import React, { Dispatch, SetStateAction, useEffect, useMemo, useState } from 'react';
 import downArrow from '../../public/icons/accordian-down-arrow.svg';
 import { LocalModuleGroupDetail } from './models/local-module-detail';
 import { useTranslation } from 'react-i18next';

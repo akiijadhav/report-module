@@ -7,7 +7,7 @@ import {
   useReactTable,
 } from '@tanstack/react-table';
 import { dataSelectdetails } from './models/data-select-details';
-import {
+import React, {
   Dispatch,
   HTMLProps,
   SetStateAction,

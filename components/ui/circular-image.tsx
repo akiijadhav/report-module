@@ -1,3 +1,4 @@
+import React from 'react';
 import Image from 'next/image';
 
 // TODO: Remove this component, Use circle icon image directly

@@ -1,3 +1,4 @@
+import React from 'react';
 import { NextPageWithLayout } from './_app';
 import RocCircularImage from '../components/ui/circular-image';
 import Link from 'next/link';

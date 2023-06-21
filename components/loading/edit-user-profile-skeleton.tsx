@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import crossIcon from '../../public/icons/cross-icon.svg';
 
 export default function EditUserProfileSkeleton(props: {

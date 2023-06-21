@@ -1,4 +1,4 @@
-import { ReactElement, useCallback, useEffect, useState } from 'react';
+import React, { ReactElement, useCallback, useEffect, useState } from 'react';
 import useRequestUtilities from '../../components/hooks/use-request-utilities';
 import UserLayout from '../../components/layouts/user-layout';
 import { ReportType } from '../../components/reports/table/types';

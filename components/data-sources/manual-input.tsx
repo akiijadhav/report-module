@@ -1,4 +1,4 @@
-import { ChangeEvent, Dispatch, SetStateAction } from 'react';
+import React, { ChangeEvent, Dispatch, SetStateAction } from 'react';
 import RocTextInput from '../forms/text-input';
 import { ManualInputModel } from './models/manual-input-model';
 

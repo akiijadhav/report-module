@@ -33,7 +33,14 @@ function App({ Component, pageProps }) {
   }, []);
   useEffect(() => {
     i18n.changeLanguage(router.locale);
+    console.log(i18n, 'i18n');
+    
   }, [router.locale]);
+
+    // Log the loaded translation resources
+    useEffect(() => {
+      console.log('Translation Resources:', i18n.options.resources);
+    }, []);
   // Use the layout defined at the page level, if available
   const getLayout = Component.getLayout ?? ((page) => page);
   return getLayout(

@@ -1,4 +1,4 @@
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import Image from 'next/image';
 import Language from '../users/language';
 

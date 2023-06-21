@@ -1,3 +1,4 @@
+import React from "react";
 import RocFormContainer from '../ui/form-container';
 
 export default function SetupPasswordSkeleton() {

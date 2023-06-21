@@ -1,3 +1,5 @@
+import React from 'react';
+
 const RocSelectInput = (props: {
   className?: string;
   required?: boolean;

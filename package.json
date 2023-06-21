@@ -34,6 +34,7 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.22.5",
+    "@babel/core": "^7.22.5",
     "@babel/preset-env": "^7.22.5",
     "@babel/preset-react": "^7.22.5",
     "@babel/preset-typescript": "^7.22.5",
@@ -75,5 +76,5 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
-  "type": "commonjs"
+  "type": "module"
 }

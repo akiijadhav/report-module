@@ -16,7 +16,7 @@
     "incremental": true
   },
   "include": [
-    "src/**/*.tsx",
+    "**/*.tsx",
     "next-env.d.ts",
     "i18n.js"
   ],

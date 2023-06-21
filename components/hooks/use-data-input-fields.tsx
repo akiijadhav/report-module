@@ -1,4 +1,4 @@
-import { useMemo } from 'react';
+import React, { useMemo } from 'react';
 import { DataSetNames } from '../data-sources/enums/dataset-names';
 import { ResultFieldDetail } from '../data-sources/models/data-input-fields';
 

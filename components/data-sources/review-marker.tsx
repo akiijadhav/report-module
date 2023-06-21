@@ -1,8 +1,7 @@
-import * as React from 'react';
 import Image from 'next/image';
 import deleteIcon from '../../public/icons/delete-report.svg';
 import restoreIcon from '../../public/icons/restore-icon.svg';
-import { Dispatch, SetStateAction } from 'react';
+import React, { Dispatch, SetStateAction } from 'react';
 import {
   createColumnHelper,
   flexRender,

@@ -1,4 +1,4 @@
-import { ReactElement, useEffect, useState } from 'react';
+import React,{ ReactElement, useEffect, useState } from 'react';
 import Image from 'next/image';
 import RocCircularImage from '../ui/circular-image';
 import dropdownArrow from '../../public/icons/arrow-drop-down-fill.svg';

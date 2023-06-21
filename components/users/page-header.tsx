@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import addIcon from '../../public/icons/add-icon.svg';
 import generateReportIcon from '../../public/icons/generate-report-icon.svg';
 import emailInvite from '../../public/icons/email-invite-icon.svg';

@@ -1,3 +1,5 @@
+import React from "react";
+
 export default function ReportTableSkeleton({
   showHeader = true,
   numberOfRows = 6,

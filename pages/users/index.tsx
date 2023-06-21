@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import {
+import React, {
   ReactElement,
   useCallback,
   useEffect,

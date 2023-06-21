@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import { ReactElement } from 'react';
+import React, { ReactElement } from 'react';
 import { DataSourcetWorkflowStep } from '../data-sources/models/data-source-workflow';
 
 export default function DataSourceContainer({

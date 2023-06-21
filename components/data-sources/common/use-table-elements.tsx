@@ -1,3 +1,4 @@
+import React from 'react';
 import { HeaderContext, CellContext, Cell } from '@tanstack/react-table';
 import Image from 'next/image';
 import {

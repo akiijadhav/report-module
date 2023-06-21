@@ -1,3 +1,4 @@
+import React from "react";
 interface statusType {
   status: 'Draft' | 'Success' | 'Completed' | 'Failed';
   className: string;

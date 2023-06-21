@@ -28,10 +28,10 @@ export default {
       tsconfig: 'tsconfig.json',
     }),
     babel({
-      babelHelpers: 'bundled',
+      babelHelpers: 'runtime',
       extensions: ['.js', '.jsx', '.ts', '.tsx'],
-      include: ['src/**/*', 'public/**/*'],
-      exclude: 'node_modules/**',
+      include: ['pages/**/*', 'components/**/*', 'public/**/*'],
+      exclude: ['node_modules/**', 'public/locales/**/*'],
     }),
     postcss({ extract: 'styles.min.css', minimize: true }),
     terser(),

@@ -1,3 +1,5 @@
+import React from 'react';
+
 const OutputSettingTextInput = (props: {
   className: string;
   required: boolean;
