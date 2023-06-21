@@ -6,6 +6,7 @@ import postcss from 'rollup-plugin-postcss'; // Processes CSS files
 import { terser } from 'rollup-plugin-terser'; // Minifies the bundled code
 import dts from 'rollup-plugin-dts'; // Generates TypeScript declaration files
 import copy from 'rollup-plugin-copy'; // Copies files during the build process
+import image from '@rollup/plugin-image'; // Handles image imports
 
 export default {
   input: 'src/index.ts', // Entry point of your source code
@@ -34,6 +35,7 @@ export default {
       include: ['pages/**/*', 'components/**/*'], // Paths to include for transpilation
       exclude: ['node_modules/**', 'public/**/*'], // Paths to exclude from transpilation
     }),
+    image(),
     postcss({ extract: 'styles.min.css', minimize: true }), // Processes CSS files
     terser(), // Minifies the bundled code
     copy({
