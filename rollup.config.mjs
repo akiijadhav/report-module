@@ -24,7 +24,7 @@ export default {
     },
   ],
   plugins: [
-    resolve(), // Resolves external dependencies
+    resolve({ module: true }), // Resolves external dependencies
     commonjs(), // Converts CommonJS modules to ES modules
     typescript({
       tsconfig: 'tsconfig.json', // TypeScript configuration file
@@ -34,6 +34,9 @@ export default {
       extensions: ['.js', '.jsx', '.ts', '.tsx'], // File extensions to transpile
       include: ['pages/**/*', 'components/**/*'], // Paths to include for transpilation
       exclude: ['node_modules/**', 'public/**/*'], // Paths to exclude from transpilation
+      // parserOpts: {
+      //   sourceType: 'module',
+      // },
     }),
     image(),
     postcss({ extract: 'styles.min.css', minimize: true }), // Processes CSS files
