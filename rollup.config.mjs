@@ -24,7 +24,7 @@ export default {
     },
   ],
   plugins: [
-    resolve({ module: true }), // Resolves external dependencies
+    resolve(), // Resolves external dependencies
     commonjs(), // Converts CommonJS modules to ES modules
     typescript({
       tsconfig: 'tsconfig.json', // TypeScript configuration file
