@@ -1,6 +1,6 @@
 {
   "name": "@akiijadhav/reports-module",
-  "version": "1.0.14",
+  "version": "1.0.15",
   "description": "A next.js web application of RDKK EP Evaluator",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
