@@ -1,6 +1,6 @@
 {
   "name": "@akiijadhav/reports-module",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Reports module",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
