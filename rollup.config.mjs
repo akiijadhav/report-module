@@ -34,6 +34,9 @@ export default {
       extensions: ['.js', '.jsx', '.ts', '.tsx'], // File extensions to transpile
       include: ['pages/**/*', 'components/**/*'], // Paths to include for transpilation
       exclude: ['node_modules/**', 'public/**/*'], // Paths to exclude from transpilation
+      // parserOpts: {
+      //   sourceType: 'module',
+      // },
     }),
     image(),
     postcss({ extract: 'styles.min.css', minimize: true }), // Processes CSS files
